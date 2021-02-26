@@ -1,3 +1,14 @@
+:root {
+  --white: #fff;
+  --opacity-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main:  #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --opacity-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
 @font-face {
   font-weight: 400;
   font-family: "Open Sans";
@@ -16,18 +27,15 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  color: #2A2626;
-  background-color: #fff;
   width: 1440px;
   margin: 0 auto;
-}
 
-main {
-  width: 100%;
-  height: 891px;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-family: "Open Sans", sans-serif;
+
+  color: var(--dark);
+  background-color: var(--white);
 }
 
 .background {
@@ -35,79 +43,103 @@ main {
 }
 
 .background::before {
-  display: block;
   position: absolute;
   top: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
   background-image: url("../assets/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.09;
-  width: 100%;
-  height: 100%;
+
   content: "";
 }
 
 section {
   width: 100%;
-  height: 914px;
   margin: 0;
+}
+
+header,
+.video-content {
+  height: 914px;
 }
 
 .content-section {
   max-width: 1110px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 100px 0;
   height: 714px;
+  margin: 0 auto;
+  padding: 100px 165px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Neucha", sans-serif;
-  line-height: 1.2em;
   margin: 0;
+
+  line-height: 1.2em;
+  font-family: "Neucha", sans-serif;
 }
 
 h1 {
-  position: absolute;
-  top: 100px;
-  left: 165px;
-  font-size: 72px;
   width: 100%;
+
+  font-size: 72px; 
 }
 
 h2 {
+  padding-bottom: 30px;
+  
   font-size: 60px;
   line-height: 72px;
+}
+
+.video-content > .content-section > h2 {
   text-align: center;
-  padding-bottom: 30px;
 }
 
 h3 {
-  font-size: 52px;
-  color: #fff;
   width: 350px;
   height: 323px;
+
+  font-size: 52px;
+
+  color: var(--white);
 }
 
 h4 {
-  font-size: 34px;
-  color: #FE8A02;
   padding-bottom: 16px;
   padding-top: 40px;
+  
+  font-size: 34px;
+
+  color: var(--main);
+}
+
+h5 {
+  padding: 5px 10px;
+
+  font-size: 14px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+
+  color: var(--white);
+  background-color: var(--brown);
 }
 
 .main-image {
-  height: 525px;
   position: absolute;
   top: 55px;
   left: 461px;
+  height: 525px;
 }
 
 .cognitive {
-  color: #FE8A02;
+  color: var(--main);
 }
 
 .first-count,
@@ -118,7 +150,6 @@ h4 {
 }
 
 .first-count {
-  left: 165px;
   height: 141px;
   margin-right: 30px;
 }
@@ -129,11 +160,11 @@ h4 {
 }
 
 button {
-  background-color: #FE8A02;
+  background-color: var(--main);
 }
 
 button:hover {
-  background-color: #EA7600;
+  background-color: var(--main);
 }
 
 .more {
@@ -142,6 +173,7 @@ button:hover {
   left: 735px;
   width: 148px;
   height: 49px;
+
   border: none;
 }
 
@@ -149,37 +181,44 @@ button:hover {
   position: absolute;
   top: 0;
   left: 0;
+  width: 101px;
+  height: 26px;
+  padding: 12px 24px;
   text-decoration: none;
+
   font-size: 16px;
   line-height: 1.6em;
   font-weight: 700;
   text-transform: uppercase;
-  height: 26px;
-  width: 101px;
-  padding: 12px 24px;
-  color: #fff;
+  
+  color: var(--white);
 }
 
 .video-content {
   position: relative;
-  background: linear-gradient(to bottom, #fff 814px, #42413c 100px);
+
+  background: linear-gradient(to bottom, var(--white) 814px, var(--main-dark) 100px);
 }
 
 .video-text {
-  text-align: center;
   margin: 0;
   padding-bottom: 30px;
+  
+  text-align: center;
 }
 
 .video {
   position: absolute;
   top: 329px;
   left: 261px;
+
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 #navigation {
-  background-color: #42413c;
+  height: 891px;
+  
+  background-color: var(--main-dark);
 }
 
 .navigation {
@@ -189,19 +228,19 @@ button:hover {
 }
 
 .card {
-  text-decoration: none; 
-  padding: 24px;
   width: 302px;
+  padding: 24px;
+  text-decoration: none;
 }
 
 .card:hover {
-  background-color: #FE8A02;
+  background-color: var(--main);
 }
 
 .card:hover > .number,
 .card:hover > h4,
 .card:hover > .menu-content {
-  color: #fff;
+  color: var(--white);
 }
 
 .card:hover > h4 {
@@ -221,26 +260,63 @@ button:hover {
 }
 
 .white-bkg {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .number {
-  font-size: 64px;
-  font-family: "Neucha", sans-serif;
-  line-height: 1em;
   padding-bottom: 40px;
-  color: #42413C;
+  
+  font-size: 64px;
+  line-height: 1em;
+  font-family: "Neucha", sans-serif;
+  
+  color: var(--main-dark);
 }
 
 .menu-content {
   margin: 0;
-  color: #42413C;
+  
+  color: var(--main-dark);
 }
 
 .light-theme {
-  background-color: #f5f4f0;
+  background-color: var(--light);
 }
 
 .dark-theme {
-  background-color: #b09a81;
+  background-color: var(--brown);
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  vertical-align: middle;
+  padding-right: 30px;
+  padding-bottom: 100px;
+}
+
+.overhead {
+  font-size: 24px;
+  line-height: 1.2em;
+  font-family: "Neucha", sans-serif;
+
+  color: var(--opacity-dark);
+}
+
+.description-distortion {
+  font-size: 34px;
+  line-height: 1.2em;
+  font-family: "Neucha", sans-serif;
+}
+
+.addition {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-addition {
+  width: 540px;
+  height: 145px;
 }
