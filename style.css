@@ -235,6 +235,10 @@ button:hover {
   height: 855px;
 }
 
+#distortion-of-novelty {
+  height: 880px;
+}
+
 .navigation {
   display: flex;
   flex-wrap: wrap;
