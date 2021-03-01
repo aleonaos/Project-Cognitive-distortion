@@ -121,6 +121,7 @@ h4 {
 }
 
 h5 {
+  margin: 0;
   padding: 5px 10px;
 
   font-size: 14px;
@@ -129,6 +130,11 @@ h5 {
 
   color: var(--white);
   background-color: var(--brown);
+}
+
+.light-header {
+  color: var(--brown);
+  background-color: var(--white);
 }
 
 .main-image {
@@ -221,6 +227,14 @@ button:hover {
   background-color: var(--main-dark);
 }
 
+#ikea-effect {
+  height: 905px;
+}
+
+#premature-optimization {
+  height: 855px;
+}
+
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -291,10 +305,18 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
+
 img {
   vertical-align: middle;
-  padding-right: 30px;
   padding-bottom: 100px;
+}
+
+.odd-section {
+  padding-right: 30px;
+}
+
+.even-section {
+  padding-left: 30px;
 }
 
 .overhead {
@@ -303,6 +325,10 @@ img {
   font-family: "Neucha", sans-serif;
 
   color: var(--opacity-dark);
+}
+
+.dark-color {
+  color: var(--opacity-white);
 }
 
 .description-distortion {
@@ -319,4 +345,8 @@ img {
 .content-addition {
   width: 540px;
   height: 145px;
+}
+
+.light-text {
+  color: #fff;
 }
