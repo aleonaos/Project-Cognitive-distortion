@@ -239,6 +239,13 @@ button:hover {
   height: 880px;
 }
 
+#hyperbolic-depreciation {
+  height: 937px;
+}
+
+#errors-in-planning {
+  height: 919px;
+}
 .navigation {
   display: flex;
   flex-wrap: wrap;
