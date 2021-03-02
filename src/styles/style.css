@@ -50,10 +50,10 @@ body {
   top: 0;
   left: 0;
 
+  z-index: -1;
+
   width: 1440px;
   height: 960px;
-
-  z-index: -1;
 
   background-image: url("../assets/images/background.png");
   background-repeat: no-repeat;
@@ -101,7 +101,6 @@ h2 {
   color: var(--main);
   font-size: 60px;
   line-height: 72px;
-
 }
 
 h2 > span,
@@ -213,11 +212,11 @@ button:hover {
   padding: 12px 24px;
 
   color: var(--white);
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.6em;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .video-content {
@@ -274,7 +273,6 @@ button:hover {
   font-size: 64px;
   font-family: "Neucha", sans-serif;
   line-height: 1em;
-
 }
 
 .menu-content {
