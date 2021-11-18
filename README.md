@@ -1,3 +1,3 @@
-## The training project "Cognitive distortion"
+## Тестовый проект "Когнитивные искажения"
 
-### Project implementation link: https://aleonaos.github.io/layout-designer-project-lvl1/
+### Ссылка на реализацию проекта: https://aleonaos.github.io/layout-designer-project-lvl1/
